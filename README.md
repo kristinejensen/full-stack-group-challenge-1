@@ -1,6 +1,7 @@
 The warehousing company you worked with on the JOINs challenge wants you back. They are hiring new people who don't know how to use SQL, so they want a website that makes it simple to view some information in their database using Angular, Express, Node, and SQL.
 
-In case you lost the tables from before, here are the queries to create the tables (also available in `database-creation.sql`):
+In case you lost the tables from before, they have sent you the Entity Relationship Diagram (ERD) and the queries to create the tables (also available in `database-creation.sql`):
+[Entity Relationship Diagram](https://docs.google.com/drawings/d/1eA7JJtCVDL0K45aVzbxIUrgWXHoKY5vv1jAhssC2c1A/edit)
 ```SQL
 CREATE TABLE customers (
     id SERIAL PRIMARY KEY,
