@@ -114,7 +114,10 @@ VALUES (1, 3, 0),
 (6, 4, 3);
 ```
 
-To start, the customer would like a web application with three views: warehouse, customer, orders. They have included an image of the SQL data they would like returned.
+To start, the customer would like a web application with three views: warehouse, customer, orders. Each view should have it's own angular controller, template, and a clickable angular route available in the navigation bar. The client has included a wireframe of what they would like:
+![Site Wireframe](/images/wireframe.png)
+
+They have also included an image of the SQL data they would like returned.
 
 1. The warehouse view should have a table that includes this information:
 ![warehouse table](/images/warehouses.png)
