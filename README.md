@@ -1,4 +1,4 @@
-The warehouse you worked with on the JOINs challenge wants you back. They are hiring new people who don't know how to use SQL, so they want a website that makes it simple to view information in their database using Angular, Express, Node, and SQL.
+The warehousing company you worked with on the JOINs challenge wants you back. They are hiring new people who don't know how to use SQL, so they want a website that makes it simple to view some information in their database using Angular, Express, Node, and SQL.
 
 In case you lost the tables from before, here are the queries to create the tables (also available in `database-creation.sql`):
 ```SQL
@@ -115,13 +115,23 @@ VALUES (1, 3, 0),
 
 To start, the customer would like a web application with three views: warehouse, customer, orders. They have included an image of the SQL data they would like returned.
 
-The warehouse view should have a table that includes this information:
+1. The warehouse view should have a table that includes this information:
 ![warehouse table](/images/warehouses.png)
-
-The customer view should have a table that includes this information:
+2. The customer view should have a table that includes this information:
 ![customers table](/images/customers.png)
-
-The orders view should have a table that includes this information which will require a few `JOIN`s:
+3. The orders view should have a table that includes this information which will require a few `JOIN`s:
 ![orders table](/images/orders.png)
 
-They want you to make their website look nice and pretty by putting these into a table and adding bootstrap to their site (maybe the rows could be part of an ng-repeat).
+They want you to make their website look nice and pretty by putting these into a table and adding bootstrap to their site (the rows should be part of an ng-repeat).
+
+## Hard Mode
+
+1. The warehouse view should have a search bar that allows the list to be filtered by what is in stock. For example:
+  * When the user searches for `diet pepsi` or `Diet Pepsi`, the table should display the following information: ![Diet Pepsi Filter](/images/diet-pepsi.png)
+  * When the user searches for `cheetos` or `Cheetos` the table should display the following information: ![Cheetos](/images/cheetos.png)
+2. The customers table should include the number of orders that customer has: ![Customer With Number of Orders](/images/customer-with-number-of-orders.png)
+
+## Pro Mode
+
+1. Create a new view for products that includes a table with the total number of that product in stock: ![Products On Hand](/images/on-hand.png)
+2. Allow a user to create (post) a new order on the orders view. Keep in mind that this will require updating multiple tables.
