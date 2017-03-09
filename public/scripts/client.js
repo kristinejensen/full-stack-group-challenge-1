@@ -5,18 +5,18 @@ myApp.config(['$routeProvider', function($routeProvider){
 
 
     .when('/warehouse', {
-      templateUrl: 'views/warehouse-view',
+      templateUrl: 'views/warehouse-view.html',
       controller: 'warehouseController',
       controllerAs: 'wc'
     })
 
-    .when('/customers' {
+    .when('/customers', {
       templateUrl: 'views/customer-view.html',
       controller: 'customersController',
       controllerAs: 'cc'
     })
 
-    .when('/orders' {
+    .when('/orders', {
       templateUrl: 'views/orders-view.html',
       controller: 'ordersController',
       controllerAs: 'oc'
