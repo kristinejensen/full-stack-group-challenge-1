@@ -1,0 +1,19 @@
+<label>Warehouse View</label>
+
+<!-- <div ng-repeat="warehouse in wc.WarehouseApp.list" ng-class="" class="row col-xs-12"> -->
+
+<table>
+  <thead>
+    <tr>
+      <th>warehouse</th>
+      <th>fulfillment-days</th>
+    </tr>
+  </thead>
+<tbody>
+  <tr ng-repeat="warehouse in wc.">
+    <td>{{warehouse.name}}</td>
+    <td>{{warehouse.fulfillmentdays}}</td>
+  </tr>
+</tbody>
+
+</table>
