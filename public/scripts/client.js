@@ -1,28 +1,27 @@
-var myApp = angular.module('WarehouseApp', ['ngRoute']);
-
-myApp.config(['$routeProvider', function($routeProvider){
+var warehouseApp = angular.module('WarehouseApp', ['ngRoute']);
+console.log('WarehouseApp is running');
+warehouseApp.config(['$routeProvider', function($routeProvider){
   $routeProvider
-
 
     .when('/warehouse', {
       templateUrl: 'views/warehouse-view.html',
-      controller: 'warehouseController',
+      controller: 'WarehouseController',
       controllerAs: 'wc'
     })
 
     .when('/customers', {
       templateUrl: 'views/customer-view.html',
-      controller: 'customersController',
+      controller: 'CustomersController',
       controllerAs: 'cc'
     })
 
     .when('/orders', {
       templateUrl: 'views/orders-view.html',
-      controller: 'ordersController',
+      controller: 'OrdersController',
       controllerAs: 'oc'
     })
 
     .otherwise({
       redirectTo: 'warehouse'
-    })
+    });
 }]);

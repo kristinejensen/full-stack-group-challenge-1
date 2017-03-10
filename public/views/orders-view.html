@@ -1,0 +1,31 @@
+<label>New Order</label>
+<!--
+<input ng-model="oc.newOrder.orderName">
+{{oc.newOrder}}
+<button ng-click="oc.addSomething()">Add Order</button>
+
+<div ng-repeat="order in oc.orderList.list">
+{{oc.orders}}
+ <span class="col-xs-6">{{orders}}</span> -->
+<table>
+  <thead>
+    <tr>
+      <th>Stuff</th>
+      <th>More Stuff</th>
+    </tr>
+  </thead>
+
+  <tbody>
+<tr ng-repeat="order in oc.ordersList.list">
+  <td>{{order.order_date}}</td>
+</tr>
+
+  </tbody>
+
+</table>
+
+<!--
+  <button ng-click="oc.finishedOrder(order.id)" ng-hide="task.status">Complete</button>
+  <button ng-click="oc.notCompleteOrder(order.id)" ng-show="task.status">This isn't actually complete</button>
+  <button ng-click="oc.tossOrder(order.id)">Delete</button>
+</div> -->
