@@ -7,9 +7,10 @@
     </tr>
   </thead>
   <tbody>
-  <tr>
-    <td>Steve</td>
-    <td>Jensen</td>
+  <tr ng-repeat="customer in cc.customerList">
+    <td>{{customer.first_name}}</td>
+    <!-- you only need to say customer since you are using ng-repeat -->
+    <td>{{customer.last_name}}</td>
   </tr>
 </tbody>
 </table>
