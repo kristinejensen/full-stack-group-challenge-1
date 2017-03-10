@@ -1,3 +1,11 @@
+SELECT orders.order_date, products.description, addresses.street, addresses.city, addresses.state, addresses.zip, addresses.address_type, customers.first_name, customers.last_name
+FROM customers
+JOIN addresses ON addresses.customer_id=customers.id
+JOIN orders ON addresses.id=orders.address_id
+JOIN line_items ON orders.id = line_items.order_id
+JOIN products ON products.id=line_items.product_id;
+
+
 CREATE TABLE customers (
     id SERIAL PRIMARY KEY,
     first_name character varying(60),

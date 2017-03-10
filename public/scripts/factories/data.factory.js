@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 warehouseApp.factory('DataFactory',['$http', function($http) {
+=======
+warehouseApp.factory('DataFactory', ['$http', function($http) {
+
+var warehouseList = { list: [] };
+>>>>>>> dev
 
 //PAUL'S CODE STARTS HERE
 var ordersList = { list: [] };
@@ -26,18 +32,49 @@ return  {
 // PAUL'S CODE ENDS HERE
 
 // CHAD'S CODE STARTS HERE
+getWarehouses();
 
+function getWarehouses() {
+  $http({
+    method: 'GET',
+    url: '/warehouse'
+  }).then(function(response) {
+    console.log(response.data);
+    warehouseList.list = response.data;
+  });
+}
 
 //CHAD'S CODE ENDS HERE
 
 // KRIS'S CODE STARTS HERE
+var customerList = {list: []};
 
+getCustomers();
+
+function getCustomers(){}
+  $http({
+    method: 'GET',
+    url: '/customers'
+  }).then(function(response){
+    console.log('response.data from factory: ', response.data);
+    customerList.list = response.data;
+  });
+}
+
+return{
+  customerList: customerList
+  warehouseList: warehouseList
+};
 
 // KRIS'S CODE ENDS HERE
 
+<<<<<<< HEAD
 
 
 
 
 
 }]); // end of TaskFactory function (end of this file)
+=======
+}]);
+>>>>>>> dev
