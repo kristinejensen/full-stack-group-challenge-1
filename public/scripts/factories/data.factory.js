@@ -39,12 +39,9 @@ function getCustomers(){}
 
 return{
   customerList: customerList
-}
-// response.data is an array of objects
+  warehouseList: warehouseList
+};
 
 // KRIS'S CODE ENDS HERE
-return {
-    warehouseList: warehouseList
-  };
 
 }]);
