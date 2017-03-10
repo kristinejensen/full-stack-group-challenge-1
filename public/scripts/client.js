@@ -1,9 +1,5 @@
 var warehouseApp = angular.module('WarehouseApp', ['ngRoute']);
-<<<<<<< HEAD
 console.log('WarehouseApp is running');
-=======
-
->>>>>>> dev
 warehouseApp.config(['$routeProvider', function($routeProvider){
   $routeProvider
 
