@@ -1,5 +1,5 @@
-myApp.controller('WarehouseController', ['$http', 'DataFactory', function($http, DataFactory){
-  console.log('The TaskController was loaded');
+warehouseApp.controller('WarehouseController', ['DataFactory', function(DataFactory){
+  console.log('The WarehouseController was loaded');
   var self = this;
-  self.newTask = {};
-  self.taskList = TaskFactory.allTasks;
+  self.warehouseList = DataFactory.warehouseList;
+}]);

@@ -4,6 +4,28 @@
 // PAUL'S CODE ENDS HERE
 
 // CHAD'S CODE STARTS HERE
+router.get('/warehouse', function(req, res) {
+  console.log('hit my get warehouses route');
+  pool.connect(function(err, client, done) {
+    if(err){
+      console.log(err);
+      res.sendStatus(500);
+    }else{
+
+      client.query('SELECT * FROM warehouse;', function(err, result) {
+        done(); // close the connection db
+
+        if(err){
+          console.log(err);
+          res.sendStatus(500); // the world exploded
+        }else{
+          console.log(result.rows);
+          res.status(200).send(result.rows);
+        }
+      });
+    }
+  });
+});
 
 
 //CHAD'S CODE ENDS HERE
